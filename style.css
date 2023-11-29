@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.main-box {
+    margin-left: 50px;
+    width: 40%;
+
+}
+
+.logo-horebe {
+    margin-top: 5px;
+    width: 200px;
+}
+
+.lava-rapido {
+    height: 300px;
+    margin-top: 80px;
+    margin-right: -395px;
+
+}
+
+.movie-lavando {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: auto;
+    height: auto;
+    background: cover;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+
+
+}
+
+.marcara-movie {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(86deg, rgba(0, 0, 0, 1) 5%, rgba(0, 254, 26, 0) 51%, rgba(0, 0, 0, 1) 95%);
+}
+
+#slider {
+    width: 80%;
+    max-width: 500px;
+    height: 25vw;
+    max-height: 150px;
+    position: relative;
+
+
+
+
+}
+
+#slider #foto-car-id {
+
+    position: absolute;
+    margin-top: -202px;
+    margin-left: 98px;
+    width: 397px;
+    height: 184px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 24px;
+    font-weight: 200;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 24px;
+
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    background: rgb(251, 4, 4);
+    background: linear-gradient(0deg, rgba(251, 4, 4, 1) 0%, rgba(13, 12, 12, 1) 49%, rgba(254, 5, 5, 1) 100%);
+    color: #ffffff;
+    cursor: pointer
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:active {
+    opacity: 0.8;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(247, 7, 7, 1) 49%, rgba(10, 0, 0, 1) 100%);
+}
+
+.chegando {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -504px;
+    margin-left: -101px;
+    transition: left 3s linear;
+}
+
+a {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    left: -350px;
+    transition: left 3s linear;
+    margin-bottom: -369px;
+    position: absolute;
+
+
+}
+
+.img-whats {
+    margin-left: 184px;
+    margin-bottom: -449px;
+    width: 100px;
+
+}
+
+
+
+
+/*responsividade*/
+
+@media (max-width:650px) {
+    .logo-horebe {
+        width: 200px;
+        margin-top: -4px;
+        margin-left: 63px;
+    }
+
+    .movie-lavando {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .marcara-movie {
+
+        background: linear-gradient(90deg, rgba(11, 11, 11, 1) 0%, rgba(253, 29, 29, 0) 50%, rgba(13, 13, 13, 1) 100%);
+    }
+
+    #slider #foto-car-id {
+        position: absolute;
+        margin-top: -41px;
+        margin-left: 3px;
+        height: 154px;
+        width: 152px;
+
+
+    }
+
+    .lava-rapido {
+        position: absolute;
+        margin-top: 166px;
+        width: 168px;
+        height: 161px;
+    }
+
+
+    .img-whats {
+        margin-left: -80px;
+        margin-top: -852px;
+        width: 100px;
+    }
+
+    .chegando {
+        margin-top: -857px;
+        width: 147px;
+        height: 140px;
+    }
+
+    p {
+        margin-top: 22px;
+        font-size: small;
+        font: icon;
+    }
+
+    h1 {
+        font-family: emoji;
+        font-size: medium;
+        margin-top: 26px;
+    }
+
+    a {
+        position: absolute;
+        margin-top: 315px;
+    }
+
+
+
+
+
+
+}
